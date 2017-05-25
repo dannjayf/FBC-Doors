@@ -1,0 +1,804 @@
+Dann Farquhar
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 5
+                    [forename] => Dann
+                    [middleName] => J
+                    [surname] => Dann
+                    [email] => dann@myurbansky.us
+                    [phone] => 7732911771
+                    [roleSetID] => 5
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Silas Shadid
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 6
+                    [forename] => Silas
+                    [middleName] => P
+                    [surname] => Silas
+                    [email] => silas@myurbansky.com
+                    [phone] => 773-921-1771
+                    [roleSetID] => 6
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6034-1
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 7
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6341
+                    [roleSetID] => 7
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6034-2
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 8
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6342
+                    [roleSetID] => 8
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6034-3
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 9
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6343
+                    [roleSetID] => 9
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6036-1
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 10
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6361
+                    [roleSetID] => 10
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6036-2
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 11
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6362
+                    [roleSetID] => 11
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6036-3
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 12
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6363
+                    [roleSetID] => 12
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6038-1
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 13
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6381
+                    [roleSetID] => 13
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6038-2
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 14
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6382
+                    [roleSetID] => 14
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6038-3
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 15
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6383
+                    [roleSetID] => 15
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6040-1
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 16
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6401
+                    [roleSetID] => 16
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6040-2
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 17
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6402
+                    [roleSetID] => 17
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6040-3
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 18
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6403
+                    [roleSetID] => 18
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6042-1
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 19
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6421
+                    [roleSetID] => 19
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6042-2
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 20
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6422
+                    [roleSetID] => 20
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6042-3
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 21
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6423
+                    [roleSetID] => 21
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6044-1
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 22
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6441
+                    [roleSetID] => 22
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6044-2
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 23
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6442
+                    [roleSetID] => 23
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6044-3
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 24
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6443
+                    [roleSetID] => 24
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6046-1
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 25
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6461
+                    [roleSetID] => 25
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6046-2
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 26
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6462
+                    [roleSetID] => 26
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6046-3
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 27
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6463
+                    [roleSetID] => 27
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6048-1
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 28
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6481
+                    [roleSetID] => 28
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6048-2
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 29
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6482
+                    [roleSetID] => 29
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6048-3
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 30
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6483
+                    [roleSetID] => 30
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6050-1
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 31
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6501
+                    [roleSetID] => 31
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6050-2
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 32
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6502
+                    [roleSetID] => 32
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6050-3
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 33
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6503
+                    [roleSetID] => 33
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6052-1
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 34
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6521
+                    [roleSetID] => 34
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6052-2
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 35
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6522
+                    [roleSetID] => 35
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+
+Apt 6052-3
+Array
+(
+    [0] => Array
+        (
+            [tag] => hid:Cardholder
+            [type] => complete
+            [level] => 3
+            [attributes] => Array
+                (
+                    [cardholderID] => 36
+                    [forename] => Apt
+                    [surname] => Apt
+                    [phone] => 6523
+                    [roleSetID] => 36
+                    [pinCommands] => false
+                    [confirmingPinExempt] => false
+                    [exemptFromPassback] => true
+                    [extendedAccess] => false
+                )
+
+        )
+
+)
+

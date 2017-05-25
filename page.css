@@ -1,0 +1,816 @@
+/* ------TEmP Tool Styles - International Teams------ */
+
+html,body {
+	margin:0;
+    padding:0;
+    height:100%;
+}
+
+
+/* ------CONTENT STYLES------ */
+
+body {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#5a5b5d;
+    height:100%;
+}
+
+p {
+	margin:0 10px 10px
+}
+
+a:link, a:visited {
+    color: #4f99D8;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #4f99D8;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+#content p {
+	line-height:1.4;
+}
+
+/* ------END CONTENT STYLES------ */
+
+
+
+
+/* ------PAGE STRUCTURE------ */
+
+#top {
+	height:20px;
+	background:#D2E38F;
+	border-bottom:6px solid #F3F0EA;
+}
+
+#wrapper {
+	float:left;
+	width:100%;
+}
+
+#content {
+	margin-left:275px;
+	padding:0 35px 0 0;
+}
+
+#bottom {
+	position:fixed;
+	bottom:0;
+	height:20px;
+	width:100%;
+	background:#D2E38F;
+	border-top:6px solid #F3F0EA;
+}
+
+/* ------END PAGE STRUCTURE------ */
+
+
+
+
+h1 {
+ font-size:20px;
+}
+
+h2 {
+ font-size:16px;
+}
+
+h3 {
+ font-size:12px;
+}
+
+/* drop some of vertical spacing */
+h4 {
+ margin-top: 7px;
+ font-size: 11px;
+ margin-bottom: 2px;
+ font-weight: bold;
+}
+
+ul {
+ list-style-type: none;
+ padding: 0;
+ margin: 4px 2px;
+}
+/* clean up the hr tag */
+hr {
+ height: 1px;
+ background-color: #AAA;
+ border: 0px solid black;
+}
+
+table {
+ border-collapse: collapse;
+ border-style: none;
+ border: 0px solid #999;
+ padding-top: 3px;
+ padding-bottom: 3px;
+ padding-left: 3px;
+ padding-right: 3px;
+}
+
+table.tb {
+ border-collapse: collapse;
+ border-style: none;
+ padding-top: 0px;
+ padding-bottom: 0px;
+ padding-left: 0px;
+ padding-right: 0px;
+}
+
+table.helptext {
+ background-color: #F3F0EA;
+ width: 500px;
+}
+
+
+td {
+ padding-top: 1px;
+ padding-bottom: 1px;
+ padding-left: 3px;
+ padding-right: 3px;
+}
+
+td.tb {
+ padding-top: 0px;
+ padding-bottom: 0px;
+ padding-left: 0px;
+ padding-right: 0px;
+}
+
+td.edit {
+ vertical-align: top;
+}
+
+/* title for fields in , '2999-12-31'edits */
+.title {
+ font-weight:bold;
+ text-align:right;
+ background-color:#F3F0EA;
+ padding-left:5px;
+ padding-right:5px;
+ padding-top:8px;
+ padding-bottom:8px;
+ vertical-align: top;
+}
+
+/* class for TEmP questions */
+.ques {
+ font-weight:normal;
+ text-align:left;
+ background-color:#F3F0EA;
+ padding:5px;
+ line-height: 1.4em; 
+
+}
+
+.smaller {
+ font-size:9px;
+}
+
+.field {
+ font-weight:bold;
+ text-align:left;
+ padding-top:5px;
+}
+
+.efield {
+ font-weight:bold;
+ text-align:left;
+ color: #888;
+ padding-top:5px;
+}
+
+.efieldr {
+ font-weight:bold;
+ text-align:left;
+ padding-top:5px;
+}
+
+.edit {
+  padding: 5px 0 0 0;
+  width:25px;
+}
+
+/* Lines all around */
+.l {
+ padding-top: 2px;
+ padding-bottom: 2px;
+ padding-left: 2px;
+ padding-right: 2px;
+ border-top: 1px solid #777;
+ border-bottom: 1px solid #777;
+ border-left: 1px solid #777;
+ border-right: 1px solid #777;
+}
+
+.pending {
+ background-color:#FFFEA0;
+}
+
+/* Top Bottom Left lines*/
+.ltbl {
+ border-top: 1px solid #999;
+ border-bottom: 1px solid #999;
+ border-left: 1px solid #999;
+}
+
+/* Top Bottom Right lines */
+.ltbr {
+ border-top: 1px solid #999;
+ border-bottom: 1px solid #999;
+ border-right: 1px solid #999;
+}
+
+/* Top Bottom lines */
+.ltb {
+ border-top: 1px solid #999;
+ border-bottom: 1px solid #999;
+}
+
+/* Heading (reverse with white letters) */
+.hd {
+ color: #fff;
+ background-color: #4f99D8;
+ font-weight: bold;
+ padding: 2px 3px;
+ line-height: 1.4;
+}
+
+.hd-top {
+ color: #fff;
+ background-color: #4f99D8;
+ font-weight: bold;
+ padding: 2px 3px;
+ line-height: 1.4;
+ border-bottom: 1px solid #fff;
+}
+
+.hd-ov {
+ color: #fff;
+ background-color: #4f99D8;
+ font-weight: bold;
+ padding: 8px 5px;
+ text-align:center;
+ font-size:12px;
+}
+
+a:link.hd, a:visited.hd {
+ color: #fff;
+ background-color: #4f99D8;
+ text-decoration:underline;
+ font-weight:bold;
+}
+
+a:hover.hd, a:active.hd {
+ color: #fff;
+ background-color: #4f99D8;
+ text-decoration:underline;
+ font-weight:bold;
+}
+
+a:link.hdt, a:visited.hdt {
+ color: #fff;
+ background-color: #4f99D8;
+ text-decoration:none;
+ font-weight:bold;
+}
+
+a:hover.hdt, a:active.hdt {
+ color: #fff;
+ background-color: #4f99D8;
+ text-decoration:none;
+ font-weight:bold;
+}
+
+a:hover.nolink, a:active.nolink, a:link.nolnk, a:visited.nolink {
+ color: #000;
+ text-decoration:none;
+}
+
+/* alternating rows */
+.c1 {
+ background-color:#F3F0EA;
+ padding-right: 5px;
+}
+.c2 {
+ background-color:#ffffff;
+ padding-right: 5px;
+}
+.odd {
+ background-color:#F3F0EA;
+ padding-right: 5px;
+}
+
+.odds {
+ background-color:#FFE0EA;
+ padding-right: 5px;
+}
+.even {
+ background-color:#ffffff;
+ padding-right: 5px;
+}
+
+.evens {
+ background-color:#ffefef;
+ padding-right: 5px;
+}
+.oddl {
+ background-color:#F3F0EA;
+ border-left: 1px solid #aaa;
+ border-top: 1px solid #aaa;
+ border-right: 1px solid #aaa;
+ border-bottom: 1px solid #aaa;
+}
+.evenl {
+ background-color:#ffffff;
+ border-left: 1px solid #aaa;
+ border-top: 1px solid #aaa;
+ border-right: 1px solid #aaa;
+ border-bottom: 1px solid #aaa;
+}
+
+/* Inactive class */
+.i {
+ color: #bbb;
+}
+
+/* Inactive link */
+a:link.i, a:visited.i {
+ color: #bbb;
+}
+
+
+/* dim */
+.done {
+ color: #bbb;
+}
+
+/* Red for highlighting */
+.notdone {
+ color: #f00;
+}
+
+.alert {
+ color: #f00;
+ font-weight:bold;
+}
+
+.notcomplete {
+ color: #000;
+}
+
+.firm {
+ color: #0f0;
+}
+
+.rev {
+ color: #000;
+ background-color: #fff;
+}
+
+/* Defaults */
+select {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-size:12px;
+ text-align:left;
+}
+
+input {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-size:12px;
+ text-align:left;
+}
+
+th {
+ font-weight:bold;
+ color: #fff;
+ background-color: #4f99D8;
+ border-left: 1px solid #fff;
+ border-right: 1px solid #fff;
+ padding: 5px 3px;
+}
+
+th.top {
+ font-size:12px;
+ color: #fff;
+ background-color: #4f99D8;
+ padding-top: 3px;
+ padding-bottom: 3px;
+ border-bottom: 1px solid #fff;
+}
+
+/* Five MI */
+th.fivemi {
+ color: #000;
+ background-color: #dddddd;
+ padding: 2px;
+ border: 1px solid #000;
+}
+
+
+/* Finanical Information Menu */
+td.mainmenu {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-size:12px;
+ font-weight:bold;
+ text-align:left;
+ border-top: 1px solid #ccc;
+ padding-top:5px;
+}
+
+/* The unselected top menus */
+td.topmenu {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-size:12px;
+ font-weight:bold;
+ text-align:left;
+ padding:5px 0;
+ border-top: 1px solid #ccc;
+ border-bottom: 1px solid #ccc;
+}
+
+a:link.topmenu, a:visited.topmenu {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-size:12px;
+ color: #5a5b5d;
+ font-weight:bold;
+ text-align:left;
+ padding:2px;
+ text-decoration:none;
+}
+
+a:hover.topmenu, a:active.topmenu {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-size:12px;
+ color: #FFF;
+ background-color: #4f99D8;
+ font-weight:bold;
+ text-align:left;
+ padding:2px;
+ text-decoration:none;
+}
+
+
+
+/* the class used by logout */
+
+td.botmenu {
+ text-align:left;
+ padding:5px 0;
+ border-top: 1px solid #ccc;
+}
+
+a:link.botmenu, a:visited.botmenu {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-size:12px;
+ font-weight:bold;
+ color: #5a5b5d;
+}
+
+a:hover.botmenu, a:active.botmenu {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-size:12px;
+ font-weight:bold;
+ color:#FFF;
+ background-color: #4f99D8;
+ 
+}
+
+
+
+/* The currently selected menu */
+
+td.selmenu {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-size:12px;
+ font-weight:bold;
+ text-align:left;
+ color: #ffffff;
+ padding:5px 0;
+ border-top: 1px solid #ccc;
+}
+
+a:link.selmenu, a:visited.selmenu {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-size:12px;
+ color: #4f99D8;
+ font-weight:bold;
+ text-align:left;
+ padding:2px;
+ text-decoration:none;
+}
+
+a:hover.selmenu, a:active.selmenu {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-size:12px;
+ color: #4f99D8;
+ font-weight:bold;
+ text-align:left;
+ padding:2px;
+ text-decoration:none;
+}
+
+
+/* to add some space after last submenu */
+
+td.endsubmenu {
+ font-size:5px;
+ padding-top: 0px;
+ padding-bottom: 0px;
+}
+
+td.menu {
+ padding-left: 15px;
+}
+
+td.hlink {
+ text-align: left;
+ font-weight: bold;
+ padding-left: 15px;
+ padding-right: 5px;
+}
+
+/* none class for heading link */
+a:hover.none, a:active.none {
+ text-decoration:none;
+}
+
+a:link.none, a:visited.none {
+ text-decoration:none;
+}
+
+/* Unselected Menu Links */
+td.link {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-size:10px;
+ text-align:left;
+ text-decoration:none;
+ font-weight:normal;
+ padding:3px 0;
+}
+
+a:link.link, a:visited.link {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-size:10px;
+ color:#5a5b5d;
+ padding:1px 15px;
+ text-align:left;
+ text-decoration:none;
+ font-weight:normal;
+}
+
+a:hover.link, a:active.link {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-size:10px;
+ color:#FFFFFF;
+ padding:1px 15px;
+ text-align:left;
+ text-decoration:none;
+ font-weight:normal;
+ background-color: #4f99D8;
+}
+
+
+div.link {
+ text-indent: -30px;
+ margin-left: 30px;
+}
+
+div.scroll50 {
+ height: 50px;
+ width: 500px;
+ font-size: 12px;
+ overflow: auto;
+ border:1px solid #777;
+ padding: 3px;
+}
+div.scroll100 {
+ height: 100px;
+ width: 500px;
+ font-size: 12px;
+ overflow: auto;
+ border:1px solid #777;
+ padding: 3px;
+}
+div.scroll150 {
+ height: 150px;
+ width: 500px;
+ font-size: 12px;
+ overflow: auto;
+ border:1px solid #777;
+ padding: 3px;
+}
+div.scroll {
+ height: 200px;
+ width: 500px;
+ font-size: 12px;
+ overflow: auto;
+ border:1px solid #777;
+ padding: 3px;
+}
+
+div.bio {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-size: 13px;
+}
+
+/* Selected Menu Links */
+
+td.slink {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-size:10px;
+ text-align:left;
+ font-weight:normal;
+ text-decoration:none;
+ padding:3px 0;
+}
+
+a:link.slink, a:visited.slink {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-size:10px;
+ padding:1px 15px;
+ color: #FFF;
+ background-color: #4f99D8;
+ text-align:left;
+ font-weight:normal;
+ text-decoration:none;
+}
+
+a:hover.slink, a:active.slink {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-size:10px;
+ padding:1px 15px;
+ color: #FFF;
+ background-color: #4f99D8;
+ text-align:left;
+ font-weight:normal;
+ text-decoration:none;
+}
+
+
+a:link.underline, a:visited.underline {
+ text-decoration:none;
+}
+
+a:hover.underline, a:active.underline {
+ text-decoration:underline;
+}
+
+/* link for tempi */
+a:link.field, a:visited.field {
+ text-decoration:none;
+ font-weight: bold;
+}
+
+a:hover.field, a:active.field {
+ text-decoration:underline;
+ font-weight: bold;
+}
+
+/* Link for bold selected */
+a:hover.sel, a:active.sel, a:link.sel, a:visited.sel {
+ text-decoration:none;
+ font-weight: bold;
+ color: black;
+}
+
+/* Setup to use CSS for baloon help */
+a:hover.helplink {
+ font-size: 12px;
+}
+a:link.helplink {
+ font-size: 12px;
+}
+a:visited.helplink {
+ font-size: 12px;
+}
+a:link.helplink span {
+ font-size: 12px;
+ display:none;
+}
+a:visited.helplink span {
+ font-size: 12px;
+ display:none;
+}
+a:hover.helplink span {
+ position: fixed;
+ left: 300px;
+ margin: 20px;
+ max-width: 300px;
+ padding: 5px 10px 5px 10px;
+ border: 1px solid #c0c0c0;
+ text-align: left;
+ font-size: 12px;
+ display: block;
+ text-decoration: none;
+ background-color: beige;
+ color: #000;
+}
+
+/* Financial Reports */
+a:link.finrpt,a:visited.finrpt {
+ color: #000;
+ text-decoration: none;
+}
+
+a:hover.finrpt {
+ color: #00f;
+ text-decoration: underline;
+}
+
+.pos {
+ color: #000;
+ font-size: 12px;
+}
+
+.neg {
+ color: #f00;
+ font-size: 12px;
+}
+
+.red {
+ color: #f00;
+ font-weight : bold;
+}
+
+.help {
+ font-size: 12px;
+ line-height: 1.4em;
+ text-decoration: none;
+ color: #333333;
+}
+
+.helpfg {
+ border: 1px solid #888888;
+ font-size: 12px;
+ text-decoration: none;
+ background-color: beige;
+}
+
+.helpbg {
+ text-decoration: none;
+ background-color: white;
+ color: #000;
+}
+
+.helptext {
+ width: 500px;
+}
+
+.noprint {
+}
+
+td.f {
+ border: 0px;
+ font-size:10px;
+}
+td.l {
+ text-align:left;
+ border: 1px solid #ccc;
+ font-size:10px;
+}
+td.c {
+ text-align:center;
+ border: 1px solid #ccc;
+ font-size:10px;
+}
+td.r {
+ text-align:right;
+ border: 1px solid #ccc;
+ font-size:10px;
+}
+
+td.ts1 {
+ background-color:#efefef;
+ border: 1px solid #ccc;
+ font-size:10px;
+}
+td.ts2 {
+ background-color:#ffffff;
+ border: 1px solid #ccc;
+ font-size:10px;
+}
+
+
+
+
+
+
+/* default hover 
+a:hover {
+ text-decoration:none;
+ color:#666666;
+ background-color:#cfcfcf;
+}
+*/
+
+/* END TEMP TOOL NAVIGATION */
+
+

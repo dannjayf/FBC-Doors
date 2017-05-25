@@ -1,0 +1,34 @@
+
+routing-table called-e164 RT_TO_FXS
+        route {e101} dest-interface IF_FXS_1
+        route {e102} dest-interface IF_FXS_2
+        route {e103} dest-interface IF_FXS_3
+        route {e104} dest-interface IF_FXS_4
+        route {e105} dest-interface IF_FXS_5
+        route {e106} dest-interface IF_FXS_6
+        route {e107} dest-interface IF_FXS_7
+        route {e108} dest-interface IF_FXS_8
+        route {e109} dest-interface IF_FXS_9
+        route {e110} dest-interface IF_FXS_10
+        route {e111} dest-interface IF_FXS_11
+        route {e112} dest-interface IF_FXS_12
+        route {e113} dest-interface IF_FXS_13
+        route {e114} dest-interface IF_FXS_14
+        route {e115} dest-interface IF_FXS_15
+        route {e116} dest-interface IF_FXS_16
+        route {e117} dest-interface IF_FXS_17
+        route {e118} dest-interface IF_FXS_18
+        route {e119} dest-interface IF_FXS_19
+        route {e120} dest-interface IF_FXS_20
+        route {e121} dest-interface IF_FXS_21
+        route {e122} dest-interface IF_FXS_22
+        route {e123} dest-interface IF_FXS_23
+        route {e124} dest-interface IF_FXS_24
+        route {e125} dest-interface IF_FXS_25
+        route {e126} dest-interface IF_FXS_26
+        route {e127} dest-interface IF_FXS_27
+        route {e128} dest-interface IF_FXS_28
+        route {e129} dest-interface IF_FXS_29
+        route {e130} dest-interface IF_FXS_30
+        route {e131} dest-interface IF_FXS_31
+        route {e132} dest-interface IF_FXS_32

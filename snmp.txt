@@ -1,0 +1,6 @@
+snmp community musadmin rw
+snmp community mustech ro
+snmp target 172.20.1.254 security-name musadmin
+snmp host 172.20.1.254 security-name musadmin
+snmp host 172.20.1.254 security-name mustech
+

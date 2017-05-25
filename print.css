@@ -1,0 +1,693 @@
+/* ------TEmP Tool Styles - International Teams------ */
+
+html,body {
+        padding:0;
+}
+
+
+/* ------CONTENT STYLES------ */
+
+body {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+	color:#5a5b5d;
+    width: 8in;
+	margin: 1em;
+}
+
+p,dl,dt {
+        width: 6in;
+	margin:0 10px 10px;
+}
+
+dd {
+    width: 6in;
+}
+
+a:link, a:visited {
+    color: #000;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #4f99D8;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+#content p {
+	line-height:1.4;
+}
+
+/* ------END CONTENT STYLES------ */
+
+
+
+
+/* ------PAGE STRUCTURE------ */
+
+#top {
+        display: none;
+}
+
+#wrapper {
+	float:left;
+	width:100%;
+}
+
+#content {
+        margin-left: 0px;
+	padding:0 0 0 0;
+}
+
+#bottom {
+        display: none;
+}
+
+/* ------END PAGE STRUCTURE------ */
+
+
+
+
+/* ------OHANA NAVIGATION------ */
+
+#mainnavcontainer {
+    margin:0;
+    padding:0;
+}
+
+#mainnavigation {
+    display: none;
+}
+
+#mainnavigation a {
+    display: none;
+}
+
+#mainnavlogocontainer, .mainnavlinkcontainer {
+    display: none;
+}
+
+#mainnavlogocontainer {
+    display: none;
+}
+
+.mainnavsubtitle {
+    display: none;
+}
+
+#mainnavcurrent a {
+    display: none;
+}
+
+.mainnavtitle {
+    display: none;
+}
+
+#sectionbanner {
+    display: none;
+}
+
+#sectionbannersubheading {
+    display: none;
+}
+
+.clearboth {
+    clear: both;
+}
+
+/* ------END OHANA NAVIGATION------ */
+
+
+
+
+/* ------TEMP TOOL NAVIGATION------ */
+
+#tempnavigation {
+    display: none;
+}
+
+#tempnavigation h1 {
+    display: none;
+}
+
+#tempnavigation h2 {
+    display: none;
+}
+
+/* ----- TMenu for content ----- */
+#tmenu {
+    display: none;
+}
+
+h1 {
+ font-size:16px;
+}
+
+h2 {
+ font-size:11px;
+}
+
+h3 {
+ font-size:10px;
+}
+
+/* drop some of vertical spacing */
+h4 {
+ margin-top: 7px;
+ margin-bottom: 2px;
+ font-weight: bold;
+}
+
+/* clean up the hr tag */
+hr {
+ height: 1px;
+ background-color: black;
+ border: 0px solid black;
+}
+
+table {
+ border-collapse: collapse;
+ border-style: none;
+ border: 0px solid #999;
+ padding-top: 3px;
+ padding-bottom: 3px;
+ padding-left: 3px;
+ padding-right: 3px;
+ width: 8in;
+}
+
+table.tb {
+ border-collapse: collapse;
+ border-style: none;
+ padding-top: 0px;
+ padding-bottom: 0px;
+ padding-left: 0px;
+ padding-right: 0px;
+}
+
+table.mobrpt {
+ font-size: 9px;
+ padding-left: 8px;
+ padding-right: 8px;
+}
+
+td {
+ padding-top: 3px;
+ padding-bottom: 3px;
+ padding-left: 8px;
+ padding-right: 8px;
+}
+
+td.tb {
+ padding-top: 0px;
+ padding-bottom: 0px;
+ padding-left: 0px;
+ padding-right: 0px;
+}
+
+td.edit {
+ vertical-align: top;
+}
+
+/* title for fields in , '2999-12-31'edits */
+.title {
+ font-weight:bold;
+ text-align:right;
+ background-color:#F3F0EA;
+ padding-left:5px;
+ padding-right:5px;
+ padding-top:8px;
+ padding-bottom:8px;
+ vertical-align: top;
+}
+
+/* class for TEmP questions */
+.ques {
+ font-weight:normal;
+ text-align:left;
+ background-color:#F3F0EA;
+ padding:5px;
+ line-height: 1.4em; 
+
+}
+
+.smaller {
+ font-size:9px;
+}
+
+.field {
+ font-weight:bold;
+ text-align:left;
+ padding-top:5px;
+}
+
+.efield {
+ font-weight:bold;
+ text-align:left;
+ color: #888;
+ padding-top:5px;
+}
+
+.efieldr {
+ font-weight:bold;
+ text-align:left;
+ padding-top:5px;
+}
+
+.edit {
+  padding: 5px 0 0 0;
+  width:25px;
+}
+
+/* Lines all around */
+.l {
+ padding-top: 2px;
+ padding-bottom: 2px;
+ padding-left: 10px;
+ padding-right: 10px;
+ border-top: 1px solid #000;
+ border-bottom: 1px solid #000;
+ border-left: 1px solid #000;
+ border-right: 1px solid #000;
+}
+
+.pending {
+ background-color:#FFFEA0;
+}
+
+/* Top Bottom Left lines*/
+.ltbl {
+ border-top: 1px solid #999;
+ border-bottom: 1px solid #999;
+ border-left: 1px solid #999;
+}
+
+/* Top Bottom Right lines */
+.ltbr {
+ border-top: 1px solid #999;
+ border-bottom: 1px solid #999;
+ border-right: 1px solid #999;
+}
+
+/* Top Bottom lines */
+.ltb {
+ border-top: 1px solid #999;
+ border-bottom: 1px solid #999;
+}
+
+/* Heading (reverse with white letters) */
+.hd {
+ color: #fff;
+ background-color: #4f99D8;
+ font-weight: bold;
+ padding: 2px 3px;
+ line-height: 1.4;
+}
+
+.hd-top {
+ color: #fff;
+ background-color: #4f99D8;
+ font-weight: bold;
+ padding: 2px 3px;
+ line-height: 1.4;
+ border-bottom: 1px solid #fff;
+}
+
+.hd-ov {
+ color: #fff;
+ background-color: #4f99D8;
+ font-weight: bold;
+ padding: 8px 5px;
+ text-align:center;
+ font-size:10px;
+}
+
+a:link.hd, a:visited.hd {
+ color: #fff;
+ background-color: #4f99D8;
+ text-decoration:underline;
+ font-weight:bold;
+}
+
+a:hover.hd, a:active.hd {
+ color: #fff;
+ background-color: #4f99D8;
+ text-decoration:underline;
+ font-weight:bold;
+}
+
+/* alternating rows */
+.c1 {
+ background-color:#F3F0EA;
+ padding-right: 5px;
+}
+.c2 {
+ background-color:#ffffff;
+ padding-right: 5px;
+}
+.odd {
+ background-color:#F3F0EA;
+ padding-right: 5px;
+}
+
+.odds {
+ background-color:#FFE0EA;
+ padding-right: 5px;
+}
+.even {
+ background-color:#ffffff;
+ padding-right: 5px;
+}
+
+.evens {
+ background-color:#ffefef;
+ padding-right: 5px;
+}
+
+/* Inactive class */
+.i {
+ color: #bbb;
+}
+
+/* dim */
+.done {
+ color: #999;
+}
+
+/* Red for highlighting */
+.notdone {
+ color: #f00;
+}
+
+.rev {
+ color: #000;
+ background-color: #fff;
+}
+
+/* Defaults */
+select {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ text-align:left;
+}
+
+input {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ text-align:left;
+}
+
+th {
+ font-weight:bold;
+ color: #fff;
+ background-color: #4f99D8;
+ border-left: 1px solid #fff;
+ border-right: 1px solid #fff;
+ padding: 10px;
+}
+
+th.top {
+ color: #fff;
+ background-color: #4f99D8;
+ padding-top: 3px;
+ padding-bottom: 3px;
+ border-bottom: 1px solid #fff;
+}
+
+
+/* Finanical Information Menu */
+td.mainmenu {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-weight:bold;
+ text-align:left;
+ border-top: 1px solid #ccc;
+ padding-top:5px;
+}
+
+/* The unselected top menus */
+td.topmenu {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-weight:bold;
+ text-align:left;
+ padding:5px 0;
+ border-top: 1px solid #ccc;
+ border-bottom: 1px solid #ccc;
+}
+
+a:link.topmenu, a:visited.topmenu {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ color: #5a5b5d;
+ font-weight:bold;
+ text-align:left;
+ padding:2px;
+ text-decoration:none;
+}
+
+a:hover.topmenu, a:active.topmenu {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ color: #FFF;
+ background-color: #4f99D8;
+ font-weight:bold;
+ text-align:left;
+ padding:2px;
+ text-decoration:none;
+}
+
+
+
+/* the class used by logout */
+
+td.botmenu {
+ text-align:left;
+ padding:5px 0;
+ border-top: 1px solid #ccc;
+}
+
+a:link.botmenu, a:visited.botmenu {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-weight:bold;
+ color: #5a5b5d;
+}
+
+a:hover.botmenu, a:active.botmenu {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-weight:bold;
+ color:#FFF;
+ background-color: #4f99D8;
+ 
+}
+
+
+
+/* The currently selected menu */
+
+td.selmenu {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-weight:bold;
+ text-align:left;
+ color: #ffffff;
+ padding:5px 0;
+ border-top: 1px solid #ccc;
+}
+
+a:link.selmenu, a:visited.selmenu {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ color: #4f99D8;
+ font-weight:bold;
+ text-align:left;
+ padding:2px;
+ text-decoration:none;
+}
+
+a:hover.selmenu, a:active.selmenu {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ color: #4f99D8;
+ font-weight:bold;
+ text-align:left;
+ padding:2px;
+ text-decoration:none;
+}
+
+
+
+/* to add some space after last submenu */
+
+td.endsubmenu {
+ font-size:5px;
+ padding-top: 0px;
+ padding-bottom: 0px;
+}
+
+td.menu {
+ padding-left: 15px;
+}
+
+td.hlink {
+ text-align: left;
+ font-weight: bold;
+ padding-left: 15px;
+ padding-right: 5px;
+}
+
+/* none class for heading link */
+a:hover.none, a:active.none {
+ text-decoration:none;
+}
+
+a:link.none, a:visited.none {
+ text-decoration:none;
+}
+
+/* Unselected Menu Links */
+td.link {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ text-align:left;
+ text-decoration:none;
+ font-weight:normal;
+ padding:3px 0;
+}
+
+a:link.link, a:visited.link {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ color:#5a5b5d;
+ padding:1px 15px;
+ text-align:left;
+ text-decoration:none;
+ font-weight:normal;
+}
+
+a:hover.link, a:active.link {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ color:#FFFFFF;
+ padding:1px 15px;
+ text-align:left;
+ text-decoration:none;
+ font-weight:normal;
+ background-color: #4f99D8;
+}
+
+
+div.link {
+ text-indent: -30px;
+ margin-left: 30px;
+}
+
+/* Selected Menu Links */
+
+td.slink {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ text-align:left;
+ font-weight:normal;
+ text-decoration:none;
+ padding:3px 0;
+}
+
+a:link.slink, a:visited.slink {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ padding:1px 15px;
+ color: #FFF;
+ background-color: #4f99D8;
+ text-align:left;
+ font-weight:normal;
+ text-decoration:none;
+}
+
+a:hover.slink, a:active.slink {
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ padding:1px 15px;
+ color: #FFF;
+ background-color: #4f99D8;
+ text-align:left;
+ font-weight:normal;
+ text-decoration:none;
+}
+
+
+a:link.underline, a:visited.underline {
+ text-decoration:none;
+}
+
+a:hover.underline, a:active.underline {
+ text-decoration:underline;
+}
+
+/* link for tempi */
+a:link.field, a:visited.field {
+ text-decoration:none;
+ font-weight: bold;
+}
+
+a:hover.field, a:active.field {
+ text-decoration:none;
+ font-weight: bold;
+}
+
+/* Setup to use CSS for baloon help */
+a:hover.helplink {
+}
+a:link.helplink {
+}
+a:visited.helplink {
+}
+a:link.helplink span {
+ display:none;
+}
+a:visited.helplink span {
+ display:none;
+}
+a:hover.helplink span {
+ position: fixed;
+ left: 300px;
+ margin: 20px;
+ max-width: 300px;
+ padding: 5px 10px 5px 10px;
+ border: 1px solid #c0c0c0;
+ text-align: left;
+ display: block;
+ text-decoration: none;
+ background-color: beige;
+ color: #000;
+}
+
+.pos {
+ color: #000;
+}
+
+.neg {
+ color: #f00;
+}
+
+.help {
+ line-height: 1.4em;
+ text-decoration: none;
+ color: #333333;
+}
+
+.helpfg {
+ border: 1px solid #888888;
+ text-decoration: none;
+ background-color: beige;
+}
+
+.helpbg {
+ text-decoration: none;
+ background-color: white;
+ color: #000;
+}
+
+.noprint {
+ display: none;
+}
+
+
+/* default hover 
+a:hover {
+ text-decoration:none;
+ color:#666666;
+ background-color:#cfcfcf;
+}
+*/
+
+/* END TEMP TOOL NAVIGATION */
+
+
