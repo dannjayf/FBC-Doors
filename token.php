@@ -11,6 +11,7 @@ elseif (!empty($_REQUEST['loc']) and $_REQUEST['loc'] == 'new') {
 }
 else {
     $loc = $_SESSION['loc'];
+    $sid = 1;
     $tmenu = "<a href=$pgm>Select</a> | <a href=$pgm?loc=new>Location</a>";
 
     head(getLocation().'|RFID Cards/FOBs',$tmenu);
@@ -90,6 +91,45 @@ else {
 
         // update acl
         updACL($id, $_REQUEST['asset']);
+
+        // Update Controllers
+        
+        $query = "
+        SELECT 
+            a.id,
+            b.token_id,
+            c.token,
+            a.ip_address,
+            a.admin_user,
+            a.admin_pass,
+            c.people_id,
+            e.pid
+        FROM asset as a
+        JOIN acl as b ON (b.asset_id = a.id)
+        JOIN token as c ON (b.token_id = c.id)
+        JOIN hid as e ON (a.id = e.asset_id and c.people_id = e.people_id)
+        WHERE a.loc = $loc
+            and b.token_id = $id
+        ";
+        $r = sql_query($query);
+        while ($row = mysql_fetch_assoc($r)) {
+            $host = $row['ip_address'];
+            $username = $row['admin_user'];
+            $password = $row['admin_pass'];
+            // First add card
+            $vars = hidAddCard($row['token']);
+            echo "<pre>"; 
+            echo "Add Card "; print_r($vars[0]['type']); echo "\n";
+
+            // Now add person
+            $vars = hidAssignCard($row['pid'], $row['token']);
+            echo "Assign Card "; print_r($vars[0]['type']); echo "\n";
+
+            $vars = hidAssignSchedule($row['pid'], $sid);
+            echo "Assign Schedule "; print_r($vars[0]['type']); echo "\n";
+            echo '</pre>';
+            ob_flush(); flush();
+        }
 
 
         echo "<h1>Updated</h1>";

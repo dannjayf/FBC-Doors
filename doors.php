@@ -11,7 +11,7 @@ function getDoorStateH($h) {
     $host = $h;
 
     $vars = hidStatus();
-    error_log(date('Y-m-d H:i:s ')."$h:$username:$password\n".print_r($vars,true)."\n", 3, '/tmp/doors.log');
+    // error_log(date('Y-m-d H:i:s ')."$h:$username:$password\n".print_r($vars,true)."\n", 3, '/tmp/doors.log');
 
     switch ($vars[0]['attributes']['relayState']) {
     case 'set':
@@ -82,6 +82,7 @@ function getStatus() {
     $doors[2] = getDoorStateH('192.168.100.211');
     $doors[3] = getDoorStateH('192.168.100.212');
     $doors[4] = getDoorStateH('192.168.100.214');
+    $doors[5] = getDoorStateH('192.168.100.215');
 
     return $doors;
 }
@@ -145,6 +146,20 @@ if (!empty($_GET['q'])) {
         $vars = hidDoorLock();
         $doors[4] = getDoorState(29, array('Locked','Unlocked'));
         break;
+    case 'student_open':
+        $host = '192.168.100.215';
+        $username = 'admin';
+        $password = 'FirstB';
+        $vars = hidDoorUnlock();
+        $doors[5] = getDoorState(31, array('Locked','Unlocked'));
+        break;
+    case 'student_close':
+        $host = '192.168.100.215';
+        $username = 'admin';
+        $password = 'FirstB';
+        $vars = hidDoorLock();
+        $doors[5] = getDoorState(31, array('Locked','Unlocked'));
+        break;
     default:
         $vars = print_r($_SERVER,true);
         break;
@@ -188,6 +203,12 @@ else {
     <td><button onClick="document.location.href='doors.php?q=door3_open'; return false;">Open</button></td>
     <td><button onClick="document.location.href='doors.php?q=door3_close'; return false;">Close</button></td>
     <td><?php echo $door[4]; ?></td>
+    </tr>
+    <tr>
+    <td><strong>Student Door</strong></td>
+    <td><button onClick="document.location.href='doors.php?q=student_open'; return false;">Open</button></td>
+    <td><button onClick="document.location.href='doors.php?q=student_close'; return false;">Close</button></td>
+    <td><?php echo $door[5]; ?></td>
     </tr>
     </table>
     <meta http-equiv='refresh' content='10;url=doors.php'>

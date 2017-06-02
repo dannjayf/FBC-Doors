@@ -1,5 +1,5 @@
 <?php
-global $xml1, $xml2, $tzlist;
+global $xml1, $xml2, $tzlist, $verbose;
 global $host, $username, $password;
 
 $tzlist = array(
@@ -18,7 +18,7 @@ $xml1 = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><VertXMessage>";
 $xml2 = "</VertXMessage>";
 
 function getLines($url, $post = '', $timeout = 60) {
-    global $username, $password;
+    global $username, $password, $verbose;
 
     $process = curl_init() or die ("Init Error");
     if ($post)  {
@@ -28,15 +28,34 @@ function getLines($url, $post = '', $timeout = 60) {
     // curl_setopt($process, CURLOPT_HTTPAUTH, CURLAUTH_DIGEST);
     curl_setopt($process, CURLOPT_USERPWD, "$username:$password");
     curl_setopt($process, CURLOPT_URL, $url);
-    curl_setopt($process, CURLOPT_HEADER, 0);
+    curl_setopt($process, CURLOPT_HEADER, false);
     curl_setopt($process, CURLOPT_TIMEOUT, $timeout);
     curl_setopt($process, CURLOPT_RETURNTRANSFER, TRUE);
     $return = curl_exec($process) or curl_error($process);
+    
+    // If unauthorized, then redo with digest
+    if (strpos($return, '401 - Unauthorized')) {
+        curl_close($process);
+        $process = curl_init() or die ("Init Error");
+        if ($post)  {
+            curl_setopt($process, CURLOPT_POSTFIELDS, $post);
+        }
 
-    // $lines = explode("\n", $return);
+        curl_setopt($process, CURLOPT_HTTPAUTH, CURLAUTH_DIGEST);
+        curl_setopt($process, CURLOPT_USERPWD, "$username:$password");
+        curl_setopt($process, CURLOPT_URL, $url);
+        curl_setopt($process, CURLOPT_HEADER, false);
+        curl_setopt($process, CURLOPT_TIMEOUT, $timeout);
+        curl_setopt($process, CURLOPT_RETURNTRANSFER, TRUE);
+        $return = curl_exec($process) or curl_error($process);
+    }
+
+    curl_close($process);
+
+    if ($verbose)
+        error_log(date('Y-m-d H:i:s ')."$url\n".print_r($return,true)."\n",3,'/tmp/doors.log');
 
     $lines = str_replace(">",">\n", $return);
-    // error_log(date('Y-m-d H:i:s ').print_r($lines,true)."\n",3,'/tmp/doors.log');
 
     return $lines;
 }

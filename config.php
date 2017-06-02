@@ -1,5 +1,7 @@
 <?php
-global $dows;
+global $dows, $verbose;
+
+$verbose = false;
 
 $dows = array('Su','Mo','Tu','We','Th','Fr','Sa');
 

@@ -182,6 +182,24 @@ class HID {
 
         $return = curl_exec($process) or curl_error($process);
 
+        // If unauthorized, then redo with digest
+        if (strpos($return, '401 - Unauthorized')) {
+            curl_close($process);
+            $process = curl_init() or die ("Init Error");
+            if ($post)  {
+                curl_setopt($process, CURLOPT_POSTFIELDS, $post);
+            }
+
+            curl_setopt($process, CURLOPT_HTTPAUTH, CURLAUTH_DIGEST);
+            curl_setopt($process, CURLOPT_USERPWD, "$username:$password");
+            curl_setopt($process, CURLOPT_URL, $url);
+            curl_setopt($process, CURLOPT_HEADER, false);
+            curl_setopt($process, CURLOPT_TIMEOUT, $timeout);
+            curl_setopt($process, CURLOPT_RETURNTRANSFER, TRUE);
+            $return = curl_exec($process) or curl_error($process);
+        }
+        curl_close($process);
+
         $lines = str_replace(">",">\n", $return);
 
         return $lines;

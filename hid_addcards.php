@@ -26,7 +26,7 @@ FROM asset
 WHERE
     active = 1
     and loc = 11
-    and ip_address = '192.168.100.213'
+    and ip_address = '192.168.100.214'
 ORDER BY ip_address
 ";
 
