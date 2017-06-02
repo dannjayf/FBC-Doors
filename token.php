@@ -99,15 +99,23 @@ else {
             a.id,
             b.token_id,
             c.token,
+            c.card_id,
             a.ip_address,
             a.admin_user,
             a.admin_pass,
             c.people_id,
-            e.pid
+            e.pid,
+            f.id as people_id,
+            f.fname,
+            f.mname,
+            f.lname,
+            f.email,
+            f.phone
         FROM asset as a
         JOIN acl as b ON (b.asset_id = a.id)
         JOIN token as c ON (b.token_id = c.id)
-        JOIN hid as e ON (a.id = e.asset_id and c.people_id = e.people_id)
+        LEFT JOIN hid as e ON (a.id = e.asset_id and c.people_id = e.people_id)
+        LEFT JOIN people as f ON (c.people_id = f.id)
         WHERE a.loc = $loc
             and b.token_id = $id
         ";
@@ -121,7 +129,46 @@ else {
             echo "<pre>"; 
             echo "Add Card "; print_r($vars[0]['type']); echo "\n";
 
-            // Now add person
+            // Check for 'B' FOB
+            $btoken = '';
+            if (substr($row['token'],0,3) == '00B') {
+                $btoken = strtoupper(sprintf('%08s', base_convert(substr(base_convert($row['token'], 16, 2),0,-1),2,16)));
+            }
+            elseif (substr($row['token'],0,3) == '02B') {
+                $btoken = strtoupper(sprintf('%08s', base_convert(substr(base_convert($row['token'], 16, 2),1,-1),2,16)));
+            }
+            if ($btoken) {
+                $q = "SELECT id FROM token WHERE token = '$btoken'";
+                $r2 = sql_query($q);
+                if (mysql_num_rows($r2) == 0)  {
+                    $bcard = $row['card_id'].'B';
+                    $query = "INSERT INTO token (token, loc, card_id, people_id, addby, addts, chgby, chgts) VALUES (
+                        '$btoken',
+                        $loc,
+                        '$bcard',
+                        {$row['people_id']},
+                        '$user',
+                        '$ts',
+                        '$user',
+                        '$ts')";
+
+                    sql_query($query);
+                }
+            }
+
+            // Add person
+            if (!$row['pid']) {
+                $vars = hidAddPerson($row);
+                echo print_r($vars,true),"\n";
+                $pid = $vars[0]['attributes']['cardholderID'];
+
+                // Update lookup for CardHolderID
+                if ($pid) {
+                    $query = "INSERT INTO hid (asset_id, people_id, pid) VALUES({$row['id']}, {$row['people_id']}, $pid)";
+                    sql_query($query);
+                }
+            }
+
             $vars = hidAssignCard($row['pid'], $row['token']);
             echo "Assign Card "; print_r($vars[0]['type']); echo "\n";
 
@@ -152,6 +199,13 @@ else {
         else {
             $tokens = getTokenList();
             $row['loc'] = $loc;
+
+            // Find the next unassigned number
+            $q = "SELECT MAX(card_id) FROM token WHERE card_id REGEXP '^[0-9]+$'";
+            $r2 = sql_query($q);
+            $row2 = mysql_fetch_row($r2);
+
+            $row['card_id'] = $row2[0]+1;
         }
         // Setup defaults
 
@@ -166,7 +220,7 @@ else {
 	else {
 	    editrow('RFID', 'token', $row['token'], 60);
 	}
-    editrow('Card/FOB ID', 'card_id', $row['card_id'], 60);
+    editrow('Card/FOB ID', 'card_id', $row['card_id'], 10);
     editfunc('Location', 'loc', $row['loc'], 'sel_loc');
     editfunc('Person', 'people_id', $row['people_id'], 'sel_people');
     editrow('Start Date/Time', 'sdatetime', dsp_date($row['sdatetime']), 30);

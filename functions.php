@@ -1475,10 +1475,12 @@ function getTokenList() {
     }
 
     // Find tokens not in system
+    $f = date('Y-m-d H:i:s', time() - 3600*24*30);
     $query = "
     SELECT *
     FROM asset_log
     WHERE event_type = '1022'
+        and timestamp >= '$f'
     ORDER BY timestamp DESC
     ";
 
@@ -1488,7 +1490,7 @@ function getTokenList() {
         $data = unserialize($row['event_data']);
         $tok = $data['rawCardNumber'];
         // If not assigned, and not found
-        if (!array_key_exists($tok, $assigned) && !array_key_exists($tok, $tokens))
+        if ($tok != '000000' && !array_key_exists($tok, $assigned) && !array_key_exists($tok, $tokens))
             $tokens[$tok] = $tok.' - '.date('m/d/Y h:i a', strtotime($row['timestamp']));
     }
 

@@ -127,6 +127,7 @@ function hidAddPerson($data) {
     $lname = empty($data['lname']) ? '' : $data['lname'];
     $email = empty($data['email']) ? '' : $data['email'];
     $phone = empty($data['phone']) ? '' : $data['phone'];
+    $custom1 = empty($data['people_id']) ? '' : $data['people_id'];
 
 	$d['forename'] = $fname;
 	$d['middleName'] = $mname;
@@ -135,7 +136,7 @@ function hidAddPerson($data) {
 	$d['extendedAccess'] = 'false';
 	$d['confirmingPin'] = '';
 	$d['email'] = $email;
-	$d['custom1'] = '';
+	$d['custom1'] = $custom1;
 	$d['custom2'] = '';
 	$d['phone'] = $phone;
 
